@@ -27,4 +27,11 @@ suite('bayes', () => {
       0.8
     );
   });
+
+  test('#predictBinaryBias counts', () => {
+    assert.equal(
+      bayes.predictBinaryBias(4, 1).prediction,
+      0.8
+    );
+  });
 });
